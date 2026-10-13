@@ -1,0 +1,61 @@
+.detail-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--pine);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.detail-back:hover {
+  text-decoration: underline;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.detail-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--line);
+}
+
+.detail-name {
+  margin-bottom: 8px;
+  font-size: 40px;
+}
+
+.detail-price {
+  color: var(--pine-deep);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.detail-description {
+  color: var(--muted);
+}
+
+.detail-facts {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .detail-name {
+    font-size: 32px;
+  }
+}
